@@ -142,7 +142,7 @@ func main() {
 		&cli.StringFlag{
 			Name:   "key",
 			Value:  "it's a secrect",
-			Usage:  "pre-shared secret between client and server"//,
+			Usage:  "pre-shared secret between client and server",
 			//EnvVar: "KCPTUN_KEY",
 		},
 		&cli.StringFlag{
