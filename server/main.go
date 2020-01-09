@@ -132,18 +132,18 @@ func main() {
 		cli.StringFlag{
 			Name:  "listen,l",
 			Value: ":29900",
-			Usage: "kcp server listen address",
+			Usage: &"kcp server listen address",
 		},
 		cli.StringFlag{
 			Name:  "target, t",
 			Value: "127.0.0.1:12948",
-			Usage: "target server address, or path/to/unix_socket",
+			Usage: &"target server address, or path/to/unix_socket",
 		},
 		cli.StringFlag{
 			Name:   "key",
 			Value:  "it's a secrect",
 			Usage:  "pre-shared secret between client and server",
-			EnvVar: "KCPTUN_KEY",
+			EnvVar: &"KCPTUN_KEY",
 		},
 		cli.StringFlag{
 			Name:  "crypt",
